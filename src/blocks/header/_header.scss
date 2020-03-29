@@ -118,7 +118,7 @@
 @media (max-width: 568px) {
   .header {
     &__logo {
-      margin: 0 auto;
+      margin: 0;
       display: block;
       margin-top: 30px;
     }
@@ -129,6 +129,7 @@
     }
     &__image-phone {
       margin: 0;
+      margin-top: 5px;
       margin-left: 40px;
     }
     &__phone {
