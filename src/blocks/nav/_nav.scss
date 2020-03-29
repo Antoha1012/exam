@@ -52,3 +52,38 @@
     margin-right: 8px;
   }
 }
+@media (max-width: 568px) {
+  .nav {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      &:hover .nav__link {
+        border: none;
+      }
+    }
+    &__link {
+      padding: 0;
+      margin: 0;
+      margin-right: 30px;
+    }
+    &__text {
+      margin: 0;
+    }
+    &__text--map {
+      color: #ab9478;
+      text-decoration: underline;
+    }
+    &__img {
+      margin: 0;
+    }
+    &__checkbox {
+      display: none;
+    }
+    &__logo {
+      margin: 0;
+      width: 170px;
+    }
+  }
+}

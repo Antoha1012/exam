@@ -1,20 +1,24 @@
 mixin nav
-    .container
-        .row
-            .col-5
-                ul.nav__list.d-flex
-                    li.nav__item 
-                        a.nav__link(href="#") Services
-                    li.nav__item 
-                        a.nav__link(href="#") Faq/Tips
-                    li.nav__item 
-                        a.nav__link(href="#") Reviews
-                    li.nav__item 
-                        a.nav__link(href="#") locations
-                    li.nav__item 
-                        a.nav__link(href="#") Reservation
-            .col-2.offset-5.d-flex.align-items-center
-                p.nav__text Your region:
-                a.nav__map.d-flex.align-items-center(href="#")
-                    img.nav__img(src="./img/Vector (1).jpg", alt="")
-                    p.nav__text.nav__text--map San Jose
+    .row
+        .col-xl-5.col-sm-12
+            input(id="nav", type="checkbox", name="").d-none.nav__checkbox             
+            label(for="nav").nav__burger
+            span.nav__line
+            span.nav__line
+            span.nav__line
+            ul.nav__list.d-flex
+                li.nav__item 
+                    a.nav__link(href="#") Services
+                li.nav__item 
+                    a.nav__link(href="#") Faq/Tips
+                li.nav__item 
+                    a.nav__link(href="#") Reviews
+                li.nav__item 
+                    a.nav__link(href="#") locations
+                li.nav__item 
+                    a.nav__link(href="#") Reservation
+        .col-xl-2.offset-xl-5.col-sm-2.d-flex.align-items-center
+            p.nav__text Your region:
+            a.nav__map.d-flex.align-items-center(href="#")
+                img.nav__img(src="./img/Vector (1).jpg", alt="")
+                p.nav__text.nav__text--map San Jose

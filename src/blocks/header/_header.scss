@@ -9,9 +9,9 @@
     &:hover {
       opacity: 0.5;
     }
-    &:hover .header__image-phone{
-        animation-play-state: running;
-      }
+    &:hover .header__image-phone {
+      animation-play-state: running;
+    }
   }
   &__image-phone {
     display: block;
@@ -22,7 +22,6 @@
     animation-duration: 300ms;
     animation-iteration-count: infinite;
     animation-play-state: paused;
-    
   }
   @keyframes phonePulse {
     0% {
@@ -72,8 +71,8 @@
     color: #5c524b;
     text-decoration: none;
     letter-spacing: 0.3px;
-    &:hover{
-        opacity: .5;
+    &:hover {
+      opacity: 0.5;
     }
   }
   &__text {
@@ -113,6 +112,32 @@
     }
     &:active {
       opacity: 0.5;
+    }
+  }
+}
+@media (max-width: 568px) {
+  .header {
+    &__logo {
+      margin: 0 auto;
+      display: block;
+      margin-top: 30px;
+    }
+    &__section2 {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    &__image-phone {
+      margin: 0;
+      margin-left: 40px;
+    }
+    &__phone {
+      margin: 0;
+      margin-right: 40px;
+    }
+    &__btn {
+      margin: 0 auto;
+      margin-top: 30px;
     }
   }
 }
