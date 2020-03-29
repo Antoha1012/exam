@@ -1,0 +1,118 @@
+.header {
+  &__logo {
+    margin-top: 39px;
+  }
+  &__section2 {
+    margin-top: 19px;
+  }
+  &__link-tel {
+    &:hover {
+      opacity: 0.5;
+    }
+    &:hover .header__image-phone{
+        animation-play-state: running;
+      }
+  }
+  &__image-phone {
+    display: block;
+    margin-left: 19px;
+    margin-top: 12px;
+    transform: translate(-50%, -50%);
+    animation-name: phoneShake;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    
+  }
+  @keyframes phonePulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  @keyframes phoneShake {
+    from {
+      transform: translate(-50%, -50%) rotateZ(0);
+    }
+
+    10% {
+      transform: translate(-50%, -50%) rotateZ(-15deg);
+    }
+
+    40% {
+      transform: translate(-50%, -50%) rotateZ(0);
+    }
+
+    60% {
+      transform: translate(-50%, -50%) rotateZ(10deg);
+    }
+
+    to {
+      transform: translate(-50%, -50%) rotateZ(0);
+    }
+  }
+  &__phone {
+    margin-top: 7px;
+    margin-right: 20px;
+  }
+  &__link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #5c524b;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    &:hover{
+        opacity: .5;
+    }
+  }
+  &__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #5c524b;
+    margin: 0;
+    margin-left: -36px;
+  }
+  &__btn {
+    background: #f8c654;
+    border-radius: 30px;
+    width: 170px;
+    height: 40px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 36px 9px 36px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border: 1px solid transparent;
+    margin-top: 11px;
+    margin-right: 1px;
+    &:hover {
+      color: #f8c654;
+      background: #fff;
+      border: 1px solid #f8c654;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

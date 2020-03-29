@@ -1,0 +1,17 @@
+mixin header
+    .container
+        .header
+            .row
+                .col-2
+                    .header__section
+                        img.header__logo(src="./img/moverstrek 1.jpg", alt="")
+                .col-4.offset-6
+                    .header__section2.d-flex.align-items-center.justify-content-between
+                        a.header__link-tel(href="tel:800-298-0044") 
+                            img.header__image-phone(src="./img/Group.jpg", alt="")
+                        .header__phone.d-flex.flex-column
+                            a.header__link(href="tel:800-298-0044") 800-298-0044
+                            p.header__text Office hours 7 AM - 7 PM
+                        button.header__btn Get a quote
+            block
+            
